@@ -17,9 +17,12 @@ package com.example.affirmations
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Card
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.example.affirmations.model.Affirmation
 import com.example.affirmations.ui.theme.AffirmationsTheme
 
@@ -40,4 +43,7 @@ fun AffirmationApp() {
 
 @Composable
 fun AffirmationCard(affirmation: Affirmation, modifier: Modifier = Modifier) {
+    Card(modifier = modifier.padding(8.dp), elevation = 4.dp) {
+        
+    }
 }
